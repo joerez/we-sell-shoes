@@ -316,6 +316,17 @@ gallery
   color: white;
 }
 
+.g-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://images.pexels.com/photos/108293/pexels-photo-108293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
 .a {
   background: url('https://images.pexels.com/photos/266840/pexels-photo-266840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size: cover;
@@ -349,7 +360,8 @@ gallery
 .f {
   background: url('https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size: cover;
-  background-position: -100px;
+  background-repeat: no-repeat;
+  background-position: -40px;
 }
 
 .g {
@@ -387,4 +399,94 @@ gallery
   .gallery > * {
     margin: 0;
   }
+}
+
+
+/****************
+subscribe 2
+****************/
+
+.subscribe-2 {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.pexels.com/photos/450059/pexels-photo-450059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+
+/**************
+Footer
+**************/
+
+.footer {
+  height: 30vh;
+  margin: 0;
+  background: #34495e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: ;
+}
+
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-cta p {
+  margin: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.footer-links {
+  text-align: left;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+.footer-copyright {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.more-links {
+  cursor: pointer;
 }
