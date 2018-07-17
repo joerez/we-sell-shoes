@@ -16,7 +16,7 @@ NAVBAR
 .nav-links {
   height: 50px;
   width: 100%;
-  background: #2980b9;
+  background: rgb(17, 50, 83);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -239,13 +239,13 @@ gallery
 *******************/
 
 .gallery-sec {
-  padding: .3rem;
+  /*padding: .3rem;*/
   margin-right: .3rem;
   height: 130vh;
   background: #ecf0f1;
   height: 130vh;
   width: 100%;
-  padding: .3rem;
+  padding: 3px;
 }
 
 .gallery {
