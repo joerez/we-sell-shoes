@@ -5,6 +5,61 @@ html, body {
   overflow-x: hidden;
 }
 
+/*******
+Popup
+********/
+
+.pop-up-layer {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,.6);
+  z-index: 100;
+}
+
+.pop-up {
+  /*display: none;*/
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  height: 15rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+  border-radius: 16px;
+  box-shadow: 0 4px 3px rgba(0,0,0,.3);
+  z-index: 10000000;
+}
+
+.pop-up-title {
+  margin-top: 0;
+  width: 95%;
+  text-align: center;
+  color: white;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  margin-top: 1rem;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  transform: scale(1.1);
+}
+
 /***********
 NAVBAR
 ***********/
@@ -99,7 +154,7 @@ HERO SECTION
 }
 
 .hero {
-  height: calc(100vh - 50px);
+  height: calc(99vh - 50px);
   width: 300%;
   overflow: hidden;
   position: relative;
@@ -219,7 +274,10 @@ subscribe
 .email-sub {
   margin-left: 1rem;
   font-size: 2rem;
-  padding: .3rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   border: none;
   border-radius: 4px;
   color: white;
@@ -246,6 +304,8 @@ gallery
   height: 130vh;
   width: 100%;
   padding: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .gallery {
