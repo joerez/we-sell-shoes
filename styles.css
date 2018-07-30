@@ -10,13 +10,41 @@ html, body {
 Popup
 ********/
 
+/*@keyframes fader {
+  0% {
+    background: rgba(0,0,0,0)
+  }
+
+  100% {
+    background: rgba(0,0,0,.6)
+  }
+
+}*/
+
+@keyframes hop-down {
+  0% {
+    transform: scale(.1) translateY(200px);
+  }
+
+
+  100% {
+    transform: scale(1) translateY(0px;);
+  }
+
+}
+
 .pop-up-layer {
+  opacity: 0%;
   display: none;
   position: fixed;
   height: 100vh;
   width: 100%;
   background: rgba(0,0,0,.6);
   z-index: 100;
+  animation: fader;
+  animation-duration: 100ms;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
 }
 
 .pop-up {
@@ -34,33 +62,46 @@ Popup
   border-radius: 16px;
   box-shadow: 0 4px 3px rgba(0,0,0,.3);
   z-index: 10000000;
+  animation: hop-down;
+  animation-duration: 100ms;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
 }
 
 .pop-up-title {
+  position: absolute;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  top: 0;
+  left: 0;
+  background: white;
   margin-top: 0;
-  width: 95%;
+  width: 100%;
   text-align: center;
-  color: white;
+  color: black;
   font-family: sans-serif;
   font-weight: 300;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .close-btn {
   position: absolute;
   top: 0;
-  right: 1rem;
-  margin-top: 1rem;
-  background: red;
+  right: 0rem;
+  margin-top: 0rem;
+  background: #e74c3c;
   color: white;
   border: none;
-  border-radius: 4px;
   font-size: 20px;
   transition: all 200ms;
   cursor: pointer;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
 
 .close-btn:hover {
-  transform: scale(1.1);
+  background: #c0392b;
 }
 
 /***********
@@ -262,6 +303,7 @@ subscribe
   border: solid 1px gray;
   font-size: 2rem;
   padding: .3rem;
+  padding-left: 1rem;
   transition: all 200ms;
 }
 

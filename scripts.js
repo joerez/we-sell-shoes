@@ -2,6 +2,11 @@ let popUp = document.getElementById('pop-up');
 let popUpLayer = document.getElementById('pop-up-layer');
 let closeModal = document.getElementById('close-pop-up');
 
+let subBtn = document.getElementById('sub-btn');
+
+subBtn.addEventListener("click", function() {
+  popUpLayer.style.display = 'flex';
+})
 
 closeModal.addEventListener("click", function() {
   popUpLayer.style.display = 'none';
