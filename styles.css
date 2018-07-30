@@ -39,7 +39,7 @@ Popup
   position: fixed;
   height: 100vh;
   width: 100%;
-  background: rgba(0,0,0,.6);
+  background: rgba(44, 62, 80,.6);
   z-index: 100;
   animation: fader;
   animation-duration: 100ms;
@@ -83,6 +83,13 @@ Popup
   font-weight: 300;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+}
+
+.pop-up-sub {
+  padding-top: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: 300;
 }
 
 .close-btn {
