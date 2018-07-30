@@ -467,7 +467,7 @@ testimonials
 
 .testimonials {
   margin-top: -2rem;
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   background: #ecf0f1;
 }
@@ -524,6 +524,8 @@ testimonials
 .testi-image {
   border: solid 8px white;
   border-radius: 50%;
+  height: 272px;
+  width: 272px;
 }
 
 .testi-quote {
@@ -540,7 +542,7 @@ testimonials
 
 .dots {
   align-self: baseline;
-  margin-top: 25rem;
+  margin-top: 28rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -560,6 +562,81 @@ testimonials
   background: black;
 }
 
+/****************
+subscribe 3
+****************/
+
+.subscribe-3 {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/**********
+faqpanel
+************/
+
+
+.faq {
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.faq-container {
+  width: 60%;
+}
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.faqpanel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
 
 
 /**************
